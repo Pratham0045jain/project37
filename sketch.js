@@ -8,12 +8,15 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800,400);
+  
+  createCanvas(1900,900);
  // createSprite(400, 200, 50, 50);
 }
 
 function draw() {
+  
   background(backgroundImg)  
+  
   //drawSprites();
 
   point = {
@@ -22,7 +25,7 @@ function draw() {
   }
 
   drawing.push(point);
-
+  
   fill(255);
   stroke("red");
   beginShape();
@@ -30,7 +33,9 @@ function draw() {
     vertex(drawing[j].x,drawing[j].y)
     
   }
+  noFill()
   endShape();
+  
   //drawing = [];
   
 }
