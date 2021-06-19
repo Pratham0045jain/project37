@@ -23,8 +23,8 @@ function setup() {
   var saveButton = select("#saveButton");
   saveButton.mousePressed(saveDrawing);
 
-  /* var clearButton = select("#clearButton");
-  clearButton.mousePressed(clearDrawing); */
+  var clearButton = select("#clearButton");
+  clearButton.mousePressed(clearDrawing);
 
 
 
@@ -123,6 +123,6 @@ function showDrawing(){
   }
 }
 
-/* function clearDrawing(){
+function clearDrawing(){
   drawing = [];
-} */
+}
